@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/control_dimen"
+    android:background="@drawable/rounded_corners_spinner"
+    android:drawablePadding="@dimen/inputs_button_spacer"
+    android:drawableRight="@drawable/expand_white"
+    android:gravity="center_vertical"
+    android:lines="1"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/more_button_text_height"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/text_input_font_size"
+    tools:text="3" />

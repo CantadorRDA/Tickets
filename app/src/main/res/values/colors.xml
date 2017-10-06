@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000521</color>
+    <color name="colorPrimaryDark">#000521</color>
+    <color name="colorAccent">#0096ff</color>
+    <color name="violet">#9000ff</color>
+    <color name="purple">#5d29d4</color>
+    <color name="blue">#156298</color>
+    <color name="darkblue">#80230058</color>
+    <color name="button_text_inactive">#aaaaaa</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_30">#55ffffff</color>
+    <color name="black_60">#9a000000</color>
+    <color name="grey">#686868</color>
+    <color name="grey_stroke">#a1a1a1</color>
+</resources>

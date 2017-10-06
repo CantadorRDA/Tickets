@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">GTicket</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <string name="ticket_search">Подбор билетов</string>
+    <string name="history">История заказов</string>
+    <string name="ask_question">Задать вопрос</string>
+    <string name="tools">Инструменты</string>
+    <string name="settings">Настройки</string>
+    <string name="about">О приложении</string>
+    <string name="search">Поиск</string>
+    <string name="streight_charter">Только прямой рейс</string>
+    <string name="visa">Визовый выезд</string>
+    <string name="comment">Комментарий</string>
+    <string name="from_city">Киев</string>
+    <string name="to_city">Гуанджоу</string>
+    <string name="level_default">Бизнес</string>
+    <string name="econom">Эконом</string>
+    <string name="business">Бизнес</string>
+    <string name="persons_count">Количество пассажиров</string>
+    <string name="levels_dialog">Выберите класс перелета</string>
+    <string name="close">Закрыть</string>
+    <string name="done">Готово!</string>
+
+    <string name="from">Туда</string>
+    <string name="to">Обратно</string>
+    <string name="additional_params">Дополнительные параметры</string>
+
+    <string name="exit">Закрыть приложение</string>
+    <string name="exit_message">Желаете закрыть приложение?</string>
+
+
+</resources>

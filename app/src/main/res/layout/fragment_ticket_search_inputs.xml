@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?actionBarSize">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/inputs_margin_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/logo_vertical_margin_bottom"
+                    android:layout_marginTop="@dimen/logo_vertical_margin_top"
+                    app:srcCompat="@drawable/logo" />
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/inputs_height"
+                    android:layout_marginLeft="@dimen/inputs_margin_horizontal"
+                    android:layout_marginRight="@dimen/inputs_margin_horizontal"
+                    android:background="@drawable/rounded_corners"
+                    android:hint="@string/from_city"
+                    android:paddingLeft="@dimen/text_input_padding"
+                    android:paddingRight="@dimen/text_input_padding"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/button_text_inactive"
+                    android:textSize="@dimen/text_input_font_size" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:scaleType="center"
+                    android:src="@drawable/swap"
+                    app:elevation="@dimen/fab_elevation"
+                    app:fabSize="mini" />
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/inputs_height"
+                    android:layout_marginLeft="@dimen/inputs_margin_horizontal"
+                    android:layout_marginRight="@dimen/inputs_margin_horizontal"
+                    android:background="@drawable/rounded_corners"
+                    android:hint="@string/to_city"
+                    android:paddingLeft="@dimen/text_input_padding"
+                    android:paddingRight="@dimen/text_input_padding"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/button_text_inactive"
+                    android:textSize="@dimen/text_input_font_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/inputs_margin_horizontal"
+                    android:layout_marginRight="@dimen/inputs_margin_horizontal"
+                    android:layout_marginTop="@dimen/inputs_margin_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/inputs_height"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corners_drawable"
+                        android:text="@string/from"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_input_font_size" />
+
+                    <View
+                        android:layout_width="@dimen/inputs_button_spacer"
+                        android:layout_height="match_parent" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/inputs_height"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corners_drawable"
+                        android:text="@string/to"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_input_font_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/inputs_margin_horizontal"
+                    android:drawableBottom="@drawable/expand"
+                    android:drawablePadding="@dimen/drawable_margin"
+                    android:text="@string/additional_params"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/more_button_text_height" />
+
+                <LinearLayout
+                    android:id="@+id/more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/inputs_margin_horizontal"
+                    android:layout_marginRight="@dimen/inputs_margin_horizontal"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/control_dimen"
+                        android:layout_marginBottom="@dimen/inputs_margin_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="@dimen/control_dimen"
+                            android:layout_height="match_parent"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/human" />
+
+                        <!--<Spinner-->
+                        <!--android:id="@+id/persons"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_marginRight="@dimen/control_dimen"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/control_dimen">
+
+                            <View
+                                android:layout_width="@dimen/control_dimen"
+                                android:layout_height="@dimen/control_dimen"
+                                android:layout_alignRight="@+id/persons"
+                                android:background="@drawable/rounded_corners_spinner" />
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/persons"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/control_dimen"
+                                android:background="@drawable/rounded_corners"
+                                android:drawablePadding="@dimen/inputs_button_spacer"
+                                android:drawableRight="@drawable/expand_white"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:paddingLeft="@dimen/activity_horizontal_margin"
+                                android:paddingRight="@dimen/more_button_text_height"
+                                android:text="3"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_input_font_size" />
+
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="@dimen/control_dimen"
+                            android:layout_height="match_parent"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/level" />
+
+                        <!--<Spinner-->
+                        <!--android:id="@+id/level"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/control_dimen">
+
+                            <View
+                                android:layout_width="@dimen/control_dimen"
+                                android:layout_height="@dimen/control_dimen"
+                                android:layout_alignRight="@+id/level"
+                                android:background="@drawable/rounded_corners_spinner" />
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/level"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/control_dimen"
+                                android:background="@drawable/rounded_corners"
+                                android:drawablePadding="@dimen/inputs_button_spacer"
+                                android:drawableRight="@drawable/expand_white"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:paddingLeft="@dimen/activity_horizontal_margin"
+                                android:paddingRight="@dimen/more_button_text_height"
+                                android:text="@string/level_default"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_input_font_size" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/checkbox_margin"
+                        android:checkedButton="@+id/radiobutton_x1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radiobutton_x1"
+                            android:layout_width="@dimen/checkbox_width"
+                            android:layout_height="@dimen/control_dimen"
+                            android:background="@drawable/radiobutton_button_drawable"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/baggage"
+                            android:drawablePadding="@dimen/drawable_margin"
+                            android:paddingLeft="@dimen/inputs_divider_horizontal"
+                            android:text="x 1"
+                            android:textColor="@color/radiobutton"
+                            android:textSize="@dimen/text_input_font_size" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton_x2"
+                            android:layout_width="@dimen/checkbox_width"
+                            android:layout_height="@dimen/control_dimen"
+                            android:background="@drawable/radiobutton_button_drawable"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/baggage"
+                            android:drawablePadding="@dimen/drawable_margin"
+                            android:paddingLeft="@dimen/inputs_divider_horizontal"
+                            android:text="x 2"
+                            android:textColor="@color/radiobutton"
+                            android:textSize="@dimen/text_input_font_size" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton_x3"
+                            android:layout_width="@dimen/checkbox_width"
+                            android:layout_height="@dimen/control_dimen"
+                            android:background="@drawable/radiobutton_button_drawable"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/baggage"
+                            android:drawablePadding="@dimen/drawable_margin"
+                            android:paddingLeft="@dimen/inputs_divider_horizontal"
+                            android:text="x 3"
+                            android:textColor="@color/radiobutton"
+                            android:textSize="@dimen/text_input_font_size" />
+
+                        <View
+                            android:layout_width="@dimen/inputs_divider_horizontal"
+                            android:layout_height="match_parent" />
+
+                    </RadioGroup>
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/control_dimen"
+                        android:layout_marginBottom="@dimen/checkbox_margin"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_button_drawable"
+                        android:drawablePadding="@dimen/checkbox_margin"
+                        android:text="@string/streight_charter"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_input_font_size" />
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/control_dimen"
+                        android:layout_marginBottom="@dimen/checkbox_margin"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_button_drawable"
+                        android:drawablePadding="@dimen/checkbox_margin"
+                        android:text="@string/visa"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_input_font_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/control_dimen"
+                        android:layout_marginBottom="@dimen/inputs_margin_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="@dimen/control_dimen"
+                            android:layout_height="match_parent"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/calendar_from" />
+
+                        <!--<Spinner-->
+                        <!--android:id="@+id/persons"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_marginRight="@dimen/control_dimen"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/calendar_from"
+                            android:layout_width="@dimen/calendar_width"
+                            android:layout_height="@dimen/control_dimen"
+                            android:layout_marginRight="@dimen/control_dimen"
+                            android:background="@drawable/rounded_corners"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_input_font_size"
+                            tools:text="15.01.2017" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="@dimen/control_dimen"
+                            android:layout_height="match_parent"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/calendar" />
+
+                        <!--<Spinner-->
+                        <!--android:id="@+id/level"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/control_dimen">
+
+                            <View
+                                android:layout_width="@dimen/control_dimen"
+                                android:layout_height="@dimen/control_dimen"
+                                android:layout_alignRight="@+id/days"
+                                android:background="@drawable/rounded_corners_spinner" />
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/days"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/control_dimen"
+                                android:background="@drawable/rounded_corners"
+                                android:drawablePadding="@dimen/inputs_button_spacer"
+                                android:drawableRight="@drawable/expand_white"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:paddingLeft="@dimen/activity_horizontal_margin"
+                                android:paddingRight="@dimen/more_button_text_height"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_input_font_size"
+                                tools:text="30" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/inputs_height"
+                    android:layout_marginLeft="@dimen/inputs_margin_horizontal"
+                    android:layout_marginRight="@dimen/inputs_margin_horizontal"
+                    android:background="@drawable/rounded_corners"
+                    android:hint="@string/comment"
+                    android:paddingLeft="@dimen/text_input_padding"
+                    android:paddingRight="@dimen/text_input_padding"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/button_text_inactive"
+                    android:textSize="@dimen/text_input_font_size" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="@dimen/search_button_width"
+                    android:layout_height="@dimen/inputs_height"
+                    android:layout_marginTop="@dimen/logo_vertical_margin_bottom"
+                    android:background="@drawable/search_button_drawable"
+                    android:text="@string/search"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/search_button_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/layout_dialog_persons" />
+
+    <include layout="@layout/layout_dialog_levels" />
+
+</RelativeLayout>

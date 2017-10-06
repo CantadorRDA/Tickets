@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape>
+        <solid android:color="@android:color/transparent" />
+        <stroke
+            android:width="0.6dp"
+            android:color="@color/grey_stroke" />
+        <corners android:radius="@dimen/control_dimen_corner_small" />
+    </shape>
+</item>
+<item
+    android:bottom="@dimen/radiobutton_padding_small"
+    android:top="@dimen/radiobutton_padding_small"
+    android:left="@dimen/radiobutton_padding_small"
+    android:right="@dimen/radiobutton_padding_small">
+    <shape>
+        <solid android:color="@color/colorAccent" />
+        <corners android:radius="@dimen/radiobutton_corner_radius" />
+    </shape>
+</item>
+</layer-list>

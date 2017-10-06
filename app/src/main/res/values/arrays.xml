@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="persons">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+
+    <array name="levels">
+        <item>Эконом</item>
+        <item>Бизнес</item>
+    </array>
+
+</resources>
